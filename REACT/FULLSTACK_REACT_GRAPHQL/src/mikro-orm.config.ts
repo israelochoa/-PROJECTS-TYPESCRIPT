@@ -1,6 +1,5 @@
 
 import { __prod__ } from "./constants";
-
 import { MikroORM } from "@mikro-orm/core";
 import { TSMigrationGenerator } from '@mikro-orm/migrations';
 import { format } from 'sql-formatter';

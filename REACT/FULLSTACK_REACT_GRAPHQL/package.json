@@ -24,8 +24,12 @@
     "@mikro-orm/core": "^5.5.3",
     "@mikro-orm/migrations": "^5.5.3",
     "@mikro-orm/postgresql": "^5.5.3",
+    "apollo-server-express": "^3.11.1",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
     "pg": "^8.8.0",
-    "sql-formatter": "^12.0.3"
+    "sql-formatter": "^12.0.3",
+    "type-graphql": "^1.1.1"
   },
   "mikro-orm": {
     "useTsNode": true,

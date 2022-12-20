@@ -5,9 +5,9 @@ import config from './mikro-orm.config';
 
 const main= async () => {
 	const orm=await MikroORM.init(config);
+    await orm.getMigrator().up();
     
-    
-    const post=await orm.em.fork().create(Post,{title:"my first post"});
-    orm.em.fork().persistAndFlush(post);
+    const post=await orm.em.fork().create(Post,{title:"my first pos2t",createdAt:new Date(),updatedAt:new Date()});
+    await orm.em.fork().persistAndFlush(post);
 }
-main();
+main().catch((er)=>{console.error(er)});
